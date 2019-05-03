@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="sqlpracticeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="sqlpracticeEntities" annotation:LazyLoadingEnabled="true">
+    <FunctionImport Name="prcEmpSearch" ReturnType="Collection(sqlpracticeModel.prcEmpSearch_Result)">
+      <Parameter Name="empno" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="prcEmpShow" ReturnType="Collection(sqlpracticeModel.prcEmpShow_Result)" />
+  </EntityContainer>
+  <ComplexType Name="prcEmpSearch_Result">
+    <Property Type="Int32" Name="Empno" Nullable="false" />
+    <Property Type="String" Name="nam" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="dept" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="desig" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="basic" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="prcEmpShow_Result">
+    <Property Type="Int32" Name="Empno" Nullable="false" />
+    <Property Type="String" Name="nam" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="dept" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="desig" Nullable="true" MaxLength="50" />
+    <Property Type="Double" Name="basic" Nullable="true" />
+  </ComplexType>
+</Schema>

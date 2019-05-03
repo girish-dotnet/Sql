@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="sqlpracticeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="prcEmpSearch" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="empno" Type="int" Mode="In" />
+        </Function>
+        <Function Name="prcEmpShow" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="sqlpracticeModelStoreContainer" />
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sqlpracticeModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="sqlpracticeEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="prcEmpSearch" ReturnType="Collection(sqlpracticeModel.prcEmpSearch_Result)">
+            <Parameter Name="empno" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="prcEmpShow" ReturnType="Collection(sqlpracticeModel.prcEmpShow_Result)" />
+        </EntityContainer>
+        <ComplexType Name="prcEmpSearch_Result">
+          <Property Type="Int32" Name="Empno" Nullable="false" />
+          <Property Type="String" Name="nam" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="dept" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="desig" Nullable="true" MaxLength="50" />
+          <Property Type="Double" Name="basic" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="prcEmpShow_Result">
+          <Property Type="Int32" Name="Empno" Nullable="false" />
+          <Property Type="String" Name="nam" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="dept" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="desig" Nullable="true" MaxLength="50" />
+          <Property Type="Double" Name="basic" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sqlpracticeModelStoreContainer" CdmEntityContainer="sqlpracticeEntities" >
+          <FunctionImportMapping FunctionImportName="prcEmpSearch" FunctionName="sqlpracticeModel.Store.prcEmpSearch">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="sqlpracticeModel.prcEmpSearch_Result">
+                <ScalarProperty Name="Empno" ColumnName="Empno" />
+                <ScalarProperty Name="nam" ColumnName="nam" />
+                <ScalarProperty Name="dept" ColumnName="dept" />
+                <ScalarProperty Name="desig" ColumnName="desig" />
+                <ScalarProperty Name="basic" ColumnName="basic" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="prcEmpShow" FunctionName="sqlpracticeModel.Store.prcEmpShow">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="sqlpracticeModel.prcEmpShow_Result">
+                <ScalarProperty Name="Empno" ColumnName="Empno" />
+                <ScalarProperty Name="nam" ColumnName="nam" />
+                <ScalarProperty Name="dept" ColumnName="dept" />
+                <ScalarProperty Name="desig" ColumnName="desig" />
+                <ScalarProperty Name="basic" ColumnName="basic" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

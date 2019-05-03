@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="sqlpracticeModelStoreContainer" CdmEntityContainer="sqlpracticeEntities">
+    <FunctionImportMapping FunctionImportName="prcEmpSearch" FunctionName="sqlpracticeModel.Store.prcEmpSearch">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="sqlpracticeModel.prcEmpSearch_Result">
+          <ScalarProperty Name="Empno" ColumnName="Empno" />
+          <ScalarProperty Name="nam" ColumnName="nam" />
+          <ScalarProperty Name="dept" ColumnName="dept" />
+          <ScalarProperty Name="desig" ColumnName="desig" />
+          <ScalarProperty Name="basic" ColumnName="basic" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="prcEmpShow" FunctionName="sqlpracticeModel.Store.prcEmpShow">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="sqlpracticeModel.prcEmpShow_Result">
+          <ScalarProperty Name="Empno" ColumnName="Empno" />
+          <ScalarProperty Name="nam" ColumnName="nam" />
+          <ScalarProperty Name="dept" ColumnName="dept" />
+          <ScalarProperty Name="desig" ColumnName="desig" />
+          <ScalarProperty Name="basic" ColumnName="basic" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>
