@@ -1,4 +1,72 @@
-  public List<Emp> ShowEmp()
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Web;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+using System.Text;
+
+namespace WcfEmpService
+{
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "EmpService" in code, svc and config file together.
+    // NOTE: In order to launch WCF Test Client for testing this service, please select EmpService.svc or EmpService.svc.cs at the Solution Explorer and start debugging.
+    public class EmpService : IEmpService
+    {
+        SqlConnection connection;
+        SqlCommand cmdSql;
+        SqlDataReader dataReader;
+        public int AutoGenerateEmpno()
+        {
+            string strcon = ConfigurationManager.
+            ConnectionStrings["sqlpracticeconn"].ConnectionString;
+            connection = new SqlConnection(strcon);
+            connection.Open();
+            cmdSql = new SqlCommand("prcEmpAutoGen", connection);
+            cmdSql.CommandType = CommandType.StoredProcedure;
+            int empno = Convert.ToInt32(cmdSql.ExecuteScalar());
+            return empno;
+        }
+        public bool InsertEmp(Emp objEmp)
+        {
+            string strcon = ConfigurationManager.
+          ConnectionStrings["sqlpracticeconn"].ConnectionString;
+          connection = new SqlConnection(strcon);
+          connection.Open();
+          cmdSql = new SqlCommand("prcEmpInsert", connection);
+          cmdSql.CommandType = CommandType.StoredProcedure;
+          cmdSql.Parameters.AddWithValue("@empno", objEmp.Empno);
+          cmdSql.Parameters.AddWithValue("@name", objEmp.Name);
+          cmdSql.Parameters.AddWithValue("@dept", objEmp.Dept);
+          cmdSql.Parameters.AddWithValue("@desig", objEmp.Desig);
+          cmdSql.Parameters.AddWithValue("@basic", objEmp.Basic);
+            cmdSql.ExecuteNonQuery();
+            return true;
+        }
+        public Emp SearchEmp(int empno)
+        {
+            string strcon = ConfigurationManager.
+             ConnectionStrings["sqlpracticeconn"].ConnectionString;
+            connection = new SqlConnection(strcon);
+            connection.Open();
+            cmdSql = new SqlCommand("prcEmpSearch", connection);
+            cmdSql.CommandType = CommandType.StoredProcedure;
+            cmdSql.Parameters.AddWithValue("@empno", empno);
+            dataReader = cmdSql.ExecuteReader();
+            Emp emp = null;
+            if(dataReader.Read())
+            {
+                emp = new Emp();
+                emp.Name = dataReader["nam"].ToString();
+                emp.Dept = dataReader["dept"].ToString();
+                emp.Desig = dataReader["desig"].ToString();
+                emp.Basic = Convert.ToInt32(dataReader["basic"]);
+            }
+            return emp;
+        }
+        public List<Emp> ShowEmp()
         {
             string strcon = ConfigurationManager.
               ConnectionStrings["sqlpracticeconn"].ConnectionString;
@@ -8,9 +76,10 @@
             cmdSql.CommandType = CommandType.StoredProcedure;
             dataReader = cmdSql.ExecuteReader();
             List<Emp> lstEmp = null;
-            while(dataReader.Read())
+            lstEmp = new List<Emp>();
+            while (dataReader.Read())
             {
-                lstEmp = new List<Emp>();
+              
                 Emp emp = new Emp();
                 emp.Empno = Convert.ToInt32(dataReader["empno"]);
                 emp.Name = dataReader["nam"].ToString();
@@ -21,3 +90,5 @@
             }
             return lstEmp;
         }
+    }
+}
