@@ -92,3 +92,18 @@ namespace WcfEmpService
         }
     }
 }
+
+
+
+ [ServiceContract]
+    public interface IEmpService
+    {
+        [OperationContract]
+        int AutoGenerateEmpno();
+        [OperationContract]
+        bool InsertEmp(Emp objEmp);
+        [OperationContract]
+        List<Emp> ShowEmp();
+        [OperationContract]
+        Emp SearchEmp(int empno);
+    }
