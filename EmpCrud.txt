@@ -107,3 +107,40 @@ namespace WcfEmpService
         [OperationContract]
         Emp SearchEmp(int empno);
     }
+
+
+_______________________________________________________
+
+
+ [ServiceContract]
+    public interface IEmpService
+    {
+        [OperationContract]
+        bool UpdateEmp(Emp objEmp);
+        [OperationContract]
+        int AutoGenerateEmpno();
+        [OperationContract]
+        bool InsertEmp(Emp objEmp);
+        [OperationContract]
+        List<Emp> ShowEmp();
+        [OperationContract]
+        Emp SearchEmp(int empno);
+    }
+
+
+ public bool UpdateEmp(Emp objEmp)
+        {
+            string strcon = ConfigurationManager.
+            ConnectionStrings["sqlpracticeconn"].ConnectionString;
+            connection = new SqlConnection(strcon);
+            connection.Open();
+            cmdSql = new SqlCommand("prcEmpUpdate", connection);
+            cmdSql.CommandType = CommandType.StoredProcedure;
+            cmdSql.Parameters.AddWithValue("@empno", objEmp.Empno);
+            cmdSql.Parameters.AddWithValue("@nam", objEmp.Name);
+            cmdSql.Parameters.AddWithValue("@dept", objEmp.Dept);
+            cmdSql.Parameters.AddWithValue("@desig", objEmp.Desig);
+            cmdSql.Parameters.AddWithValue("@basic", objEmp.Basic);
+            cmdSql.ExecuteNonQuery();
+            return true;
+        }
