@@ -8,3 +8,41 @@ BEGIN
 	SELECT * FROM Emp 
 END
 GO
+
+IF EXISTS(SELECT * FROM SYSOBJECTS WHERE NAME='prcEmpSearch')
+DROP PROC prcEmpSearch 
+GO
+
+CREATE PROC prcEmpSearch
+					@empno INT 
+AS
+BEGIN
+	SELECT * FROM Emp WHERE Empno=@empno
+END
+GO
+
+IF EXISTS(SELECT * FROM SYSOBJECTS WHERE NAME='prcEmpInsert')
+DROP PROC prcEmpInsert 
+GO
+
+CREATE PROC prcEmpInsert 
+					@empno INT,
+					@name VARCHAR(30),
+					@dept VARCHAR(30),
+					@desig VARCHAR(30),
+					@basic INT
+AS
+BEGIN
+	INSERT INTO EMp VALUES(@empno,@name,@dept,@desig,@basic)
+END
+GO
+
+IF EXISTS(SELECT * FROM SYSOBJECTS WHERE NAME='prcEmpAutoGen')
+DROP PROC prcEmpAutoGen 
+GO
+
+CREATE PROC prcEmpAutoGen 
+AS
+BEGIN
+	SELECT MAX(Empno)+1 FROM EMP 
+END
