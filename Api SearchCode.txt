@@ -21,16 +21,107 @@ namespace BMS.WcfService
         SqlCommand cmd;
         SqlDataReader dr;
 
+        public bool AddBook(Book book)
+        {
+            bool bookAdded = false;
+
+            try
+            {
+                cmd = new SqlCommand("usp_InsertBook", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", book.ID);
+                cmd.Parameters.AddWithValue("@name", book.Name);
+                cmd.Parameters.AddWithValue("@price", book.Price);
+                cmd.Parameters.AddWithValue("@desc", book.Description);
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+
+                if (result > 0)
+                    bookAdded = true;
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return bookAdded;
+        }
+
+        public bool UpdateBook(Book book)
+        {
+            bool bookUpdated = false;
+
+            try
+            {
+                cmd = new SqlCommand("usp_UpdateBook", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", book.ID);
+                cmd.Parameters.AddWithValue("@name", book.Name);
+                cmd.Parameters.AddWithValue("@price", book.Price);
+                cmd.Parameters.AddWithValue("@desc", book.Description);
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+
+                if (result > 0)
+                    bookUpdated = true;
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return bookUpdated;
+        }
+
+        public bool DeleteBook(int BookID)
+        {
+            bool bookDeleted = false;
+
+            try
+            {
+                cmd = new SqlCommand("usp_DeleteBook", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", BookID);
+
+                conn.Open();
+                int result = cmd.ExecuteNonQuery();
+
+                if (result > 0)
+                    bookDeleted = true;
+            }
+            catch (System.Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return bookDeleted;
+        }
+
         public Book SearchBook(int id)
         {
             Book book = null;
+
             try
             {
                 cmd = new SqlCommand("usp_SearchBook", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@id", id);
+
                 conn.Open();
                 dr = cmd.ExecuteReader();
+
                 if (dr.HasRows)
                 {
                     dr.Read();
@@ -41,29 +132,35 @@ namespace BMS.WcfService
                     book.Description = dr.GetString(3);
                 }
             }
-            catch (Exception)
+            catch (System.Exception ex)
             {
-                throw;
+
+                throw ex;
             }
             finally
             {
                 dr.Close();
                 conn.Close();
             }
+
             return book;
         }
+
         public List<Book> ShowBook()
         {
             List<Book> booklist = null;
+
             try
             {
                 cmd = new SqlCommand("usp_ShowBook", conn);
                 cmd.CommandType = CommandType.StoredProcedure;
+
                 conn.Open();
                 dr = cmd.ExecuteReader();
                 if (dr.HasRows)
                 {
                     booklist = new List<Book>();
+
                     while (dr.Read())
                     {
                         Book b = new Book();
@@ -71,21 +168,59 @@ namespace BMS.WcfService
                         b.Name = dr.GetString(1).ToString();
                         b.Price = dr.GetDecimal(2);
                         b.Description = dr.GetString(3).ToString();
+
                         booklist.Add(b);
                     }
                 }
             }
-            catch (Exception )
+            catch (System.Exception ex)
             {
-
-                throw;
-            } 
+                throw ex;
+            }
             finally
             {
                 dr.Close();
                 conn.Close();
             }
+
             return booklist;
         }
     }
 }
+
+_______________________________________________________________________________________________
+
+
+ [ServiceContract]
+    public interface IBookService
+    {
+        [OperationContract]
+        bool AddBook(Book book);
+
+        [OperationContract]
+        bool UpdateBook(Book book);
+
+        [OperationContract]
+        bool DeleteBook(int BookID);
+
+        [OperationContract]
+        List<Book> ShowBook();
+
+        [OperationContract]
+        Book SearchBook(int id);
+    }
+    [DataContract]
+    public class Book
+    {
+        [DataMember]
+        public int? ID { get; set; }
+
+        [DataMember]
+        public string Name { get; set; }
+
+        [DataMember]
+        public decimal? Price { get; set; }
+
+        [DataMember]
+        public string Description { get; set; }
+    }
