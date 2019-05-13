@@ -1,0 +1,59 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Web;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+
+namespace BMS.WcfService
+{
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "BookService" in code, svc and config file together.
+    // NOTE: In order to launch WCF Test Client for testing this service, please select BookService.svc or BookService.svc.cs at the Solution Explorer and start debugging.
+    public class BookService : IBookService
+    {
+        static string strcon = ConfigurationManager.
+            ConnectionStrings["bookconn"].ConnectionString;
+        SqlConnection conn = new SqlConnection(strcon);
+        SqlCommand cmd;
+        SqlDataReader dr;
+        public List<Book> ShowBook()
+        {
+            List<Book> booklist = null;
+            try
+            {
+                cmd = new SqlCommand("usp_ShowBook", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                conn.Open();
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    booklist = new List<Book>();
+                    while (dr.Read())
+                    {
+                        Book b = new Book();
+                        b.ID = dr.GetInt32(0);
+                        b.Name = dr.GetString(1).ToString();
+                        b.Price = dr.GetDecimal(2);
+                        b.Description = dr.GetString(3).ToString();
+                        booklist.Add(b);
+                    }
+                }
+            }
+            catch (Exception )
+            {
+
+                throw;
+            } 
+            finally
+            {
+                dr.Close();
+                conn.Close();
+            }
+            return booklist;
+        }
+    }
+}
