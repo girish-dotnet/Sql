@@ -1,43 +1,91 @@
- public class Employ
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Web;
+using System.Text;
+using System.Data;
+using System.Data.SqlClient;
+using System.Configuration;
+
+namespace BMS.WcfService
+{
+    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "BookService" in code, svc and config file together.
+    // NOTE: In order to launch WCF Test Client for testing this service, please select BookService.svc or BookService.svc.cs at the Solution Explorer and start debugging.
+    public class BookService : IBookService
+    {
+        static string strcon = ConfigurationManager.
+            ConnectionStrings["bookconn"].ConnectionString;
+        SqlConnection conn = new SqlConnection(strcon);
+        SqlCommand cmd;
+        SqlDataReader dr;
+
+        public Book SearchBook(int id)
         {
-            public int Empno { get; set; }
-            public string Name { get; set; }
-            public string Dept { get; set; }
-            public string Desig { get; set; }
-            public int Basic { get; set; }
-        }
-        HttpClient client;
-        public async void GetEmploy(int id)
-        {
-            using (client = new HttpClient())
+            Book book = null;
+            try
             {
-                client.BaseAddress = new Uri("http://localhost:58006/");
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.
-          Accept.Add(new MediaTypeWithQualityHeaderValue
-          ("application/json"));
-             
-        HttpResponseMessage response =
-                    await client.GetAsync("api/Employ/" + id);
-        if (response.IsSuccessStatusCode)
-        {
-           string employs = await response.Content.ReadAsStringAsync();
-           Employ c = JsonConvert.DeserializeObject<Employ>(employs);
-           if (c != null)
-           {
-               txtName.Text = c.Name;
-               txtDept.Text = c.Dept;
-               txtDesig.Text = c.Desig;
-               txtBasic.Text = c.Basic.ToString();
-           }
-           else
-           {
-                MessageBox.Show("Employs not available");
-           }
+                cmd = new SqlCommand("usp_SearchBook", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id", id);
+                conn.Open();
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    dr.Read();
+                    book = new Book();
+                    book.ID = dr.GetInt32(0);
+                    book.Name = dr.GetString(1);
+                    book.Price = dr.GetDecimal(2);
+                    book.Description = dr.GetString(3);
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            finally
+            {
+                dr.Close();
+                conn.Close();
+            }
+            return book;
         }
-      }
+        public List<Book> ShowBook()
+        {
+            List<Book> booklist = null;
+            try
+            {
+                cmd = new SqlCommand("usp_ShowBook", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                conn.Open();
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows)
+                {
+                    booklist = new List<Book>();
+                    while (dr.Read())
+                    {
+                        Book b = new Book();
+                        b.ID = dr.GetInt32(0);
+                        b.Name = dr.GetString(1).ToString();
+                        b.Price = dr.GetDecimal(2);
+                        b.Description = dr.GetString(3).ToString();
+                        booklist.Add(b);
+                    }
+                }
+            }
+            catch (Exception )
+            {
+
+                throw;
+            } 
+            finally
+            {
+                dr.Close();
+                conn.Close();
+            }
+            return booklist;
+        }
     }
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            GetEmploy(Convert.ToInt32(txtEmpno.Text));
-        }
+}
