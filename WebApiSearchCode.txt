@@ -1,0 +1,31 @@
+    <form id="form1" runat="server">
+        <div>
+              <div class="form-inline">
+         <asp:Label ID="Label1" runat="server"  Text="Book ID" CssClass="control-label col-xs-2"></asp:Label>
+       <div class="form-group">
+          
+           <asp:TextBox runat="server" ClientIDMode="Static" ID="txtId" CssClass="form-control" />
+           <%--<asp:Button runat="server" ID="btnSearch" Text="Search Book" CssClass="btn"/>--%>
+           <input type="button" id="btnSearch" value="Search Book" class="btn" />
+       </div>
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="Book Name" CssClass="control-label col-xs-2"></asp:Label>
+        <div class="form-group">
+           
+            <asp:TextBox runat="server" ID="txtName" CssClass="form-control" ReadOnly="true" />
+        </div>
+        <br />
+         <asp:Label ID="Label3" runat="server" Text="Price" CssClass="control-label col-xs-2"></asp:Label>
+         <div class="form-group">
+           
+            <asp:TextBox runat="server" ID="txtPrice" CssClass="form-control" ReadOnly="true" />
+        </div>
+        <br />
+        <asp:Label ID="Label4" runat="server" Text="Description" CssClass="control-label col-xs-2"></asp:Label>
+         <div class="form-group">
+            
+            <asp:TextBox runat="server" ID="txtDesc" CssClass="form-control" ReadOnly="true" TextMode="MultiLine"/>
+        </div>
+    </div>
+        </div>
+    </form>
