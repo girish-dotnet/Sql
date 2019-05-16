@@ -1,0 +1,70 @@
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\csc.exe
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\System.Collections.Immutable.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\vbc.exe
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\VBCSCompiler.exe
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\roslyn\VBCSCompiler.exe.config
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Day1_Demo1.dll.config
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Day1_Demo1.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Day1_Demo1.pdb
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.Security.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.Web.Infrastructure.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Newtonsoft.Json.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Owin.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.AspNet.SignalR.Core.xml
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.xml
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.Security.xml
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\bin\Newtonsoft.Json.xml
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\obj\Debug\Day1_Demo1.csprojResolveAssemblyReference.cache
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\obj\Debug\Day1_Demo1.dll
+D:\Users\vijvishw\Desktop\SignalR\Demos\Day1_Demo1\Day1_Demo1\obj\Debug\Day1_Demo1.pdb
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\csc.exe
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\vbc.exe
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Day1_Demo1.dll.config
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Day1_Demo1.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Day1_Demo1.pdb
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.Security.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Newtonsoft.Json.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Owin.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.xml
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Microsoft.Owin.Security.xml
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\bin\Newtonsoft.Json.xml
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\obj\Debug\Day1_Demo1.csprojAssemblyReference.cache
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\obj\Debug\Day1_Demo1.csproj.CoreCompileInputs.cache
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\obj\Debug\Day1_Demo1.csproj.CopyComplete
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\obj\Debug\Day1_Demo1.dll
+C:\Users\Abridge\Downloads\M3\M3\ASP.NET 4.5 with MVC5\Demos\SignalR Demo\SignalR Demo\Day1_Demo1\Day1_Demo1\obj\Debug\Day1_Demo1.pdb
