@@ -88,3 +88,33 @@ public ActionResult Index()
             // send the view back with model error
             return View(book);
         }
+
+
+
+  public ActionResult Edit(int id)
+        {
+            // variable to hold the person details retrieved from WebApi
+            Book book = null;
+
+            using (var client = new HttpClient())
+            {
+                // Url of Webapi project
+                client.BaseAddress = new Uri("http://localhost:63253/api/");
+                //HTTP GET
+                var responseTask = client.GetAsync("Books/" + id.ToString());
+                // wait for task to complete
+                responseTask.Wait();
+                // retrieve the result
+                var result = responseTask.Result;
+                // check the status code for success
+                if (result.IsSuccessStatusCode)
+                {
+                    // read the result
+                    var readTask = result.Content.ReadAsAsync<Book>();
+                    readTask.Wait();
+                    // fill the person vairable created above with the returned result
+                    book = readTask.Result;
+                }
+            }
+            return View(book);
+        }
