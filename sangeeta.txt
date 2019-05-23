@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+    using System.Data;
+using System.Data.SqlClient;
+using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
+using System.Threading.Tasks;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int res = 12;
+            sqlpracticeEntities entities = new sqlpracticeEntities();
+          //  SampleStudentDBEntities _entity = new SampleStudentDBEntities();
+            ObjectParameter returnId = new ObjectParameter("result", typeof(int)); //Create Object parameter to receive a output value.It will behave like output parameter  
+                                                                                   //  .. var value = _entity.getStudentsCountbyCity("Bangalore", returnId).ToList(); //calling our entity imported function "Bangalore" is our input parameter, returnId is a output parameter, it will receive the output value   
+                                                                                   //   ViewBag.StudentsCount = Convert.ToInt32(returnId.Value); //set the out put value to StudentsCount ViewBag  
+                                                                                   // return View();
+            entities.PrcLoginCheck("Sangeetha", "Sangeetha", returnId);
+            res = Convert.ToInt32(returnId.Value);
+            Console.WriteLine(res);
+        }
+    }
+}
