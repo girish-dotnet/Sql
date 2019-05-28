@@ -1,0 +1,6 @@
+C:\M3\SetB\BMS.Exceptions\obj\Debug\BMS.Exceptions.csprojAssemblyReference.cache
+C:\M3\SetB\BMS.Exceptions\obj\Debug\BMS.Exceptions.csproj.CoreCompileInputs.cache
+C:\M3\SetB\BMS.Exceptions\bin\Debug\BMS.Exceptions.dll
+C:\M3\SetB\BMS.Exceptions\bin\Debug\BMS.Exceptions.pdb
+C:\M3\SetB\BMS.Exceptions\obj\Debug\BMS.Exceptions.dll
+C:\M3\SetB\BMS.Exceptions\obj\Debug\BMS.Exceptions.pdb

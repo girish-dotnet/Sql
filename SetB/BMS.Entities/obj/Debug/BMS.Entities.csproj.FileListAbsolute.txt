@@ -1,0 +1,6 @@
+C:\M3\SetB\BMS.Entities\bin\Debug\BMS.Entities.dll
+C:\M3\SetB\BMS.Entities\bin\Debug\BMS.Entities.pdb
+C:\M3\SetB\BMS.Entities\obj\Debug\BMS.Entities.csprojAssemblyReference.cache
+C:\M3\SetB\BMS.Entities\obj\Debug\BMS.Entities.csproj.CoreCompileInputs.cache
+C:\M3\SetB\BMS.Entities\obj\Debug\BMS.Entities.dll
+C:\M3\SetB\BMS.Entities\obj\Debug\BMS.Entities.pdb

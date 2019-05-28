@@ -1,0 +1,12 @@
+C:\M3\SetB\BMS.DAL\bin\Debug\BMS.DAL.dll.config
+C:\M3\SetB\BMS.DAL\bin\Debug\BMS.DAL.dll
+C:\M3\SetB\BMS.DAL\bin\Debug\BMS.DAL.pdb
+C:\M3\SetB\BMS.DAL\bin\Debug\BMS.Entities.dll
+C:\M3\SetB\BMS.DAL\bin\Debug\BMS.Exceptions.dll
+C:\M3\SetB\BMS.DAL\bin\Debug\BMS.Entities.pdb
+C:\M3\SetB\BMS.DAL\bin\Debug\BMS.Exceptions.pdb
+C:\M3\SetB\BMS.DAL\obj\Debug\BMS.DAL.csprojAssemblyReference.cache
+C:\M3\SetB\BMS.DAL\obj\Debug\BMS.DAL.csproj.CoreCompileInputs.cache
+C:\M3\SetB\BMS.DAL\obj\Debug\BMS.DAL.csproj.CopyComplete
+C:\M3\SetB\BMS.DAL\obj\Debug\BMS.DAL.dll
+C:\M3\SetB\BMS.DAL\obj\Debug\BMS.DAL.pdb

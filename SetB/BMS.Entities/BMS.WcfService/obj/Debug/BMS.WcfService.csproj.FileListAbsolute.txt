@@ -1,0 +1,7 @@
+C:\M3\SetB\BMS.Entities\BMS.WcfService\obj\Debug\BMS.WcfService.csproj.CoreCompileInputs.cache
+C:\M3\SetB\BMS.Entities\BMS.WcfService\bin\BMS.WcfService.dll.config
+C:\M3\SetB\BMS.Entities\BMS.WcfService\bin\BMS.WcfService.dll
+C:\M3\SetB\BMS.Entities\BMS.WcfService\bin\BMS.WcfService.pdb
+C:\M3\SetB\BMS.Entities\BMS.WcfService\obj\Debug\BMS.WcfService.dll
+C:\M3\SetB\BMS.Entities\BMS.WcfService\obj\Debug\BMS.WcfService.pdb
+C:\M3\SetB\BMS.Entities\BMS.WcfService\obj\Debug\BMS.WcfService.csprojAssemblyReference.cache

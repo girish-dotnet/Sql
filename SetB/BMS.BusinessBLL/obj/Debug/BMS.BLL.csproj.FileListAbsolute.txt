@@ -1,0 +1,9 @@
+C:\M3\SetB\BMS.BusinessBLL\bin\Debug\BMS.BusinessBLL.dll
+C:\M3\SetB\BMS.BusinessBLL\bin\Debug\BMS.BusinessBLL.pdb
+C:\M3\SetB\BMS.BusinessBLL\bin\Debug\BMS.DAL.dll
+C:\M3\SetB\BMS.BusinessBLL\bin\Debug\BMS.DAL.pdb
+C:\M3\SetB\BMS.BusinessBLL\bin\Debug\BMS.DAL.dll.config
+C:\M3\SetB\BMS.BusinessBLL\obj\Debug\BMS.BLL.csproj.CoreCompileInputs.cache
+C:\M3\SetB\BMS.BusinessBLL\obj\Debug\BMS.BLL.csproj.CopyComplete
+C:\M3\SetB\BMS.BusinessBLL\obj\Debug\BMS.BusinessBLL.dll
+C:\M3\SetB\BMS.BusinessBLL\obj\Debug\BMS.BusinessBLL.pdb
