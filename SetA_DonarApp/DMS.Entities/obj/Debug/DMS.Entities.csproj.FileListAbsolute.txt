@@ -1,0 +1,6 @@
+C:\M3\SetA\DMS.Entities\bin\Debug\DMS.Entities.dll
+C:\M3\SetA\DMS.Entities\bin\Debug\DMS.Entities.pdb
+C:\M3\SetA\DMS.Entities\obj\Debug\DMS.Entities.csprojAssemblyReference.cache
+C:\M3\SetA\DMS.Entities\obj\Debug\DMS.Entities.csproj.CoreCompileInputs.cache
+C:\M3\SetA\DMS.Entities\obj\Debug\DMS.Entities.dll
+C:\M3\SetA\DMS.Entities\obj\Debug\DMS.Entities.pdb

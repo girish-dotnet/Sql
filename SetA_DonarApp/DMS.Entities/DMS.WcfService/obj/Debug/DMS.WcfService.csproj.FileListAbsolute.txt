@@ -1,0 +1,6 @@
+C:\M3\SetA\DMS.Entities\DMS.WcfService\bin\DMS.WcfService.dll.config
+C:\M3\SetA\DMS.Entities\DMS.WcfService\bin\DMS.WcfService.dll
+C:\M3\SetA\DMS.Entities\DMS.WcfService\bin\DMS.WcfService.pdb
+C:\M3\SetA\DMS.Entities\DMS.WcfService\obj\Debug\DMS.WcfService.csproj.CoreCompileInputs.cache
+C:\M3\SetA\DMS.Entities\DMS.WcfService\obj\Debug\DMS.WcfService.dll
+C:\M3\SetA\DMS.Entities\DMS.WcfService\obj\Debug\DMS.WcfService.pdb

@@ -1,0 +1,6 @@
+C:\M3\SetA\DMS.Exceptoins\bin\Debug\DMS.Exceptoins.dll
+C:\M3\SetA\DMS.Exceptoins\bin\Debug\DMS.Exceptoins.pdb
+C:\M3\SetA\DMS.Exceptoins\obj\Debug\DMS.Exceptions.csprojAssemblyReference.cache
+C:\M3\SetA\DMS.Exceptoins\obj\Debug\DMS.Exceptions.csproj.CoreCompileInputs.cache
+C:\M3\SetA\DMS.Exceptoins\obj\Debug\DMS.Exceptoins.dll
+C:\M3\SetA\DMS.Exceptoins\obj\Debug\DMS.Exceptoins.pdb

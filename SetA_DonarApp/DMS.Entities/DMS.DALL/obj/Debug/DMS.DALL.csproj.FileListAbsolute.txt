@@ -1,0 +1,11 @@
+C:\M3\SetA\DMS.Entities\DMS.DALL\bin\Debug\DMS.DALL.dll.config
+C:\M3\SetA\DMS.Entities\DMS.DALL\bin\Debug\DMS.DALL.dll
+C:\M3\SetA\DMS.Entities\DMS.DALL\bin\Debug\DMS.DALL.pdb
+C:\M3\SetA\DMS.Entities\DMS.DALL\bin\Debug\DMS.Entities.dll
+C:\M3\SetA\DMS.Entities\DMS.DALL\bin\Debug\DMS.Exceptoins.dll
+C:\M3\SetA\DMS.Entities\DMS.DALL\bin\Debug\DMS.Entities.pdb
+C:\M3\SetA\DMS.Entities\DMS.DALL\bin\Debug\DMS.Exceptoins.pdb
+C:\M3\SetA\DMS.Entities\DMS.DALL\obj\Debug\DMS.DALL.csproj.CoreCompileInputs.cache
+C:\M3\SetA\DMS.Entities\DMS.DALL\obj\Debug\DMS.DALL.csproj.CopyComplete
+C:\M3\SetA\DMS.Entities\DMS.DALL\obj\Debug\DMS.DALL.dll
+C:\M3\SetA\DMS.Entities\DMS.DALL\obj\Debug\DMS.DALL.pdb

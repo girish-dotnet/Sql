@@ -1,0 +1,13 @@
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.BLL.dll
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.BLL.pdb
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.DALL.dll
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.Entities.dll
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.Exceptoins.dll
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.DALL.pdb
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.DALL.dll.config
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.Entities.pdb
+C:\M3\SetA\DMS.Entities\DMS.BLL\bin\Debug\DMS.Exceptoins.pdb
+C:\M3\SetA\DMS.Entities\DMS.BLL\obj\Debug\DMS.BLL.csproj.CoreCompileInputs.cache
+C:\M3\SetA\DMS.Entities\DMS.BLL\obj\Debug\DMS.BLL.csproj.CopyComplete
+C:\M3\SetA\DMS.Entities\DMS.BLL\obj\Debug\DMS.BLL.dll
+C:\M3\SetA\DMS.Entities\DMS.BLL\obj\Debug\DMS.BLL.pdb
