@@ -32,7 +32,7 @@ CREATE PROC prcDonarIdAutoGenerate
 AS
 BEGIN
 	SELECT CASE WHEN MAX(DonorId) IS NULL THEN 1 ELSE 
-	MAX(DonorId) END DonarID  FROM Donar
+	MAX(DonorId)+1 END DonarID  FROM Donar
 END
 GO
 

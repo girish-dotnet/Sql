@@ -26,7 +26,7 @@ CREATE PROC prcBusinessIdAutoGenerate
 AS
 BEGIN
 	SELECT CASE WHEN MAX(BusinessID) IS NULL THEN 1 ELSE 
-	MAX(BusinessID) END DonarID  FROM Business
+	MAX(BusinessID)+1 END DonarID  FROM Business
 END
 Go
 
