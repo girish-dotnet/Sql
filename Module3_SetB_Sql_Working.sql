@@ -8,12 +8,14 @@ GO
 CREATE TABLE Business
 (
 	BusinessID INT Primary Key,
+	FirmName VARCHAR(30),
 	ActivityNature VARCHAR(30)
 	constraint chk_donar_activity CHECK(ActivityNature IN('Health','Trade',
 		'Water Tanker')),
+		FirmAddress VARCHAR(30),
+	OwnerName VARCHAR(30),
 	MobileNo VARCHAR(10),
-	EmailID VARCHAR(30),
-	ApplicantName VARCHAR(30)
+	EmailID VARCHAR(30)
 )
 GO
 
@@ -35,13 +37,15 @@ DROP PROC PrcBusinessInsert
 GO
 CREATE PROC PrcBusinessInsert
 					@BusinessID INT,
-					@ActivityNature VARCHAR(30),
+					@FirmName VARCHAR(30),
+					@ActivityNature VARCHAR(10),
+					@FirmAddress VARCHAR(30),
+					@OwnerName VARCHAR(15),
 					@MobileNo VARCHAR(10),
-					@EmailID VARCHAR(30),
-					@ApplicantName VARCHAR(15)
+					@EmailID VARCHAR(30)
 AS
 BEGIN
-	INSERT INTO Business VALUES(@BusinessID,@ActivityNature,@MobileNo,@EmailID,
-				@ApplicantName)
+	INSERT INTO Business VALUES(@BusinessID,@FirmName,@ActivityNature,@FirmAddress,
+				@OwnerName,@MobileNo,@EmailID)
 END
 GO
