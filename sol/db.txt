@@ -1,0 +1,18 @@
+CREATE database sqlpractice
+
+use sqlpractice
+Create Table Courses
+(
+   COURSEID INT PRIMARY KEY AUTO_INCREMENT,
+   FirstOption VARCHAR(30),
+   SecondOption VARCHAR(30),
+   ThirdOption VARCHAR(30),
+   Result VARCHAR(5)
+)
+
+INSERT INTO Courses(FirstOption,
+SecondOption,ThirdOption)
+values('A','B','C'),
+('a','b','c')
+
+SELECT * FROM Courses
