@@ -1,0 +1,6 @@
+C:\LayeredDemo\AspWCFLayerDemo\BMS.Entity\bin\Debug\BMS.Entity.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.Entity\bin\Debug\BMS.Entity.pdb
+C:\LayeredDemo\AspWCFLayerDemo\BMS.Entity\obj\Debug\BMS.Entity.csprojAssemblyReference.cache
+C:\LayeredDemo\AspWCFLayerDemo\BMS.Entity\obj\Debug\BMS.Entity.csproj.CoreCompileInputs.cache
+C:\LayeredDemo\AspWCFLayerDemo\BMS.Entity\obj\Debug\BMS.Entity.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.Entity\obj\Debug\BMS.Entity.pdb

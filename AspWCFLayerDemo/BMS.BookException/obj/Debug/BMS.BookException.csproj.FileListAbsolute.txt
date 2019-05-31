@@ -1,0 +1,6 @@
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BookException\bin\Debug\BMS.BookException.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BookException\bin\Debug\BMS.BookException.pdb
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BookException\obj\Debug\BMS.BookException.csprojAssemblyReference.cache
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BookException\obj\Debug\BMS.BookException.csproj.CoreCompileInputs.cache
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BookException\obj\Debug\BMS.BookException.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BookException\obj\Debug\BMS.BookException.pdb

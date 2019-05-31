@@ -1,0 +1,14 @@
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.BLL.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.BLL.pdb
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.BookException.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.DAL.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.Entity.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.BookException.pdb
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.DAL.pdb
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.DAL.dll.config
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\bin\Debug\BMS.Entity.pdb
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\obj\Debug\BMS.BLL.csprojAssemblyReference.cache
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\obj\Debug\BMS.BLL.csproj.CoreCompileInputs.cache
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\obj\Debug\BMS.BLL.csproj.CopyComplete
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\obj\Debug\BMS.BLL.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.BLL\obj\Debug\BMS.BLL.pdb

@@ -1,0 +1,7 @@
+C:\LayeredDemo\AspWCFLayerDemo\BMS.WcfService\bin\BMS.WcfService.dll.config
+C:\LayeredDemo\AspWCFLayerDemo\BMS.WcfService\bin\BMS.WcfService.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.WcfService\bin\BMS.WcfService.pdb
+C:\LayeredDemo\AspWCFLayerDemo\BMS.WcfService\obj\Debug\BMS.WcfService.csprojAssemblyReference.cache
+C:\LayeredDemo\AspWCFLayerDemo\BMS.WcfService\obj\Debug\BMS.WcfService.csproj.CoreCompileInputs.cache
+C:\LayeredDemo\AspWCFLayerDemo\BMS.WcfService\obj\Debug\BMS.WcfService.dll
+C:\LayeredDemo\AspWCFLayerDemo\BMS.WcfService\obj\Debug\BMS.WcfService.pdb
